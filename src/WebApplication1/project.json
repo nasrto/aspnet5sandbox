@@ -1,5 +1,5 @@
 ﻿{
-  "webroot": "wwwroot",
+  "webroot": "C:/Users/orantanen/Documents/Visual Studio 2015/Projects/WebApplication1/artifacts/bin/WebApplication1/Debug/dnxcore50",
   "version": "1.0.0-*",
 
   "dependencies": {
@@ -15,7 +15,7 @@
 
   "frameworks": {
     "dnx451": { },
-    "dnxcore50": { }
+    "dnxcore50": {  }
   },
 
   "exclude": [

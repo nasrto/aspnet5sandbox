@@ -7,6 +7,8 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Routing;
 using Microsoft.Framework.DependencyInjection;
+using WebApplication1.ServiceInterface;
+using WebApplication1.ServiceImplementations;
 
 namespace WebApplication1
 {
@@ -21,6 +23,8 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.Add(new ServiceDescriptor(typeof(IDependenceyInjectedService), typeof(DependencyInjectedService2), ServiceLifetime.Singleton));
             // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
             // You will also need to add the Microsoft.AspNet.Mvc.WebApiCompatShim package to the 'dependencies' section of project.json.
             // services.AddWebApiConventions();
